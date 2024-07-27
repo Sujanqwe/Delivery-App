@@ -3,7 +3,7 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 const navbar = () => {
 
-    const [menu,setMenu]=useState("home");
+  const [menu,setMenu]=useState("home");
 
 
   return (
