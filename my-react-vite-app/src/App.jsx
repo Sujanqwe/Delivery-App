@@ -1,5 +1,5 @@
 import React from 'react'
-import navbar from './Components/Navbar/Navbar'
+import Navbar from './Components/Navbar/Navbar'
 import Home from './Pages/Home/Home'
 import Cart from './Pages/Cart/Cart'
 import { Routes } from 'react-router-dom'
@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div className='app'>
       <Navbar/>
+
       
       <Routes>
         <Route path='/' element={<Home/>} />

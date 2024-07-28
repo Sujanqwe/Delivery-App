@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
-const navbar = () => {
+const Navbar = () => {
 
   const [menu,setMenu]=useState("home");
 
@@ -30,4 +30,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
