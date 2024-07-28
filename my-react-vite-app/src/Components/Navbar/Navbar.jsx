@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
-const navbar = () => {
+const Navbar = ({setShowLogin}) => {
 
-    const [menu,setMenu]=useState("home");
+  const [menu,setMenu]=useState("home");
 
 
   return (
@@ -22,7 +22,7 @@ const navbar = () => {
              <img src={assets.basket_icon}  alt="" />
               <div className="dot"></div>
            </div>
-          <button>Sign in</button> 
+          <button onClick={()=>setShowLogin(true)}>Sign in</button> 
 
       </div>
     </div>
@@ -30,4 +30,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
